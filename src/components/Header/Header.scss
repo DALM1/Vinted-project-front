@@ -1,0 +1,193 @@
+//***********************HEADER STYLE***************//
+
+nav {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+//*************** CONTAINER TO POSITIONNING THE NAV SECTION  *************///
+.nav-container {
+    // border: red 2px solid;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+
+    img {
+        width: 105px;
+    }
+}
+//****************LEFT CONTAINER CONTAINS THE SEARCH BAR AND THE SLIDE RANGE********///
+.left-container {
+    // border: blue 1px solid;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 10px;
+
+    //********* SEARCH BAR ***********/
+
+    .search-bar-container2 {
+        // border: 1px solid green;
+        width: 90%;
+        height: 39px;
+        border-radius: 5px;
+        background-color: #f5f6f7;
+        display: flex;
+        align-items: center;
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    span {
+        margin-left: 8px;
+        color: #bbbbbb;
+    }
+    input {
+        width: 95%;
+        margin-left: 10px;
+        font-size: 1rem;
+        color: black;
+        border: none;
+        background-color: #f5f6f7;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    // ************* STYLE RANGE BARRE *****************//
+    .range-container {
+        // border: 1px violet solid;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+
+        p {
+            margin-right: 10px;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+        .checkbox {
+            width: 10px;
+            margin-right: 1rem;
+        }
+        .btn-toogle {
+            margin-right: 1rem;
+            color: rgb(44, 177, 186);
+            font-size: 1.5rem;
+        }
+    }
+
+    .range {
+        width: 50%;
+    }
+    .btn-range {
+        position: absolute;
+        z-index: 1;
+        user-select: none;
+        touch-action: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: rgb(44, 177, 186);
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+    }
+
+    .drag-range {
+        position: absolute;
+        top: -28px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: rgb(44, 177, 186);
+    }
+}
+
+//********** BUTTONS RIGHT STYLE ********//
+
+.btn-container {
+    // border: violet 1px solid;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.btn-signup {
+    height: 30px;
+    width: 115px;
+    border: 1px solid #2cb1ba;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    background-color: #fff;
+    color: #2cb1ba;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-signup:hover {
+    background-color: #2cb1ba;
+    color: white;
+}
+
+.btn-sold {
+    height: 30px;
+    width: 115px;
+    border: 1px solid #2cb1ba;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    background-color: #2cb1ba;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}
+.btn-sold:hover {
+    height: 50px;
+    width: 150px;
+}
+
+.btn-disconnect {
+    height: 30px;
+    width: 115px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    background-color: #c2175b;
+    color: #fff;
+    margin-left: 4rem;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.btn-disconnect:hover {
+    background-color: white;
+    color: #c2175b;
+    border: 1px solid #c2175b;
+}

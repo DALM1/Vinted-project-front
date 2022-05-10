@@ -1,0 +1,168 @@
+.publish-container {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    h1 {
+        font-size: 24px;
+        font-family: sans-serif;
+    }
+
+    .img-container {
+        height: 177px;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #828586;
+    }
+
+    .description-container {
+        height: 225px;
+        border: 1px solid #eaedee;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        h2 {
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+        .description {
+            height: 66%;
+            display: flex;
+            justify-content: space-between;
+            // border: solid 1px red;
+            padding: 0 1rem;
+            align-items: center;
+
+            textarea {
+                width: 50%;
+                resize: none;
+                border: none;
+                outline: none;
+                font-family: sans-serif;
+                font-size: 16px;
+                border-bottom: 1px solid #eaedee;
+            }
+            textarea::placeholder {
+                color: #cacaca;
+            }
+        }
+
+        .title-container {
+            // border: 1px solid red;
+            height: 33%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            border-bottom: 1px solid #eaedee;
+
+            input {
+                width: 50%;
+                height: 50%;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #eaedee;
+                font-family: sans-serif;
+                font-size: 16px;
+            }
+            input::placeholder {
+                color: #cacaca;
+            }
+        }
+    }
+
+    .details-container {
+        height: 368px;
+        border: 1px solid #eaedee;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+        .line {
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            border-bottom: 1px solid #eaedee;
+            input {
+                width: 50%;
+                height: 50%;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #eaedee;
+                font-family: sans-serif;
+                font-size: 16px;
+            }
+            input::placeholder {
+                color: #cacaca;
+            }
+        }
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 130px;
+        border: 1px solid #eaedee;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+        input {
+            width: 10%;
+            height: 2rem;
+            cursor: pointer;
+            border: solid 1px #eaedee;
+            font-size: 1rem;
+        }
+
+        .price {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .btn-publish-container {
+        // border: olive 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    .btn-publish {
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+        background-color: #2cb1ba;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: all 0.5s;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .btn-publish:hover {
+        background-color: white;
+        font-weight: bold;
+        color: #2cb1ba;
+        border: 2px solid #2cb1ba;
+    }
+}
