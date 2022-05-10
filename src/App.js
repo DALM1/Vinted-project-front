@@ -89,7 +89,7 @@ function App() {
                         />
                     }
                 />
-                <Route path="/offer/:id" element={<Offer />} />
+                <Route path="/offer/:id" element={<Offer token={token} />} />
                 <Route path="/signup" element={<Signup setUser={setUser} />} />
                 <Route path="/login" element={<Login setUser={setUser} />} />
                 <Route path="/publish" element={<Publish token={token} />} />

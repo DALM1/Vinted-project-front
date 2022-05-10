@@ -4,7 +4,7 @@ import axios from "axios";
 import Productdetail from "../components/Productdetail";
 import "./containers.scss";
 
-const Offer = () => {
+const Offer = ({ token }) => {
     const params = useParams();
     // console.log(params.id);
     const [data, setData] = useState();
@@ -29,7 +29,7 @@ const Offer = () => {
         <span>En cours de chargement...</span>
     ) : (
         <div className="offer">
-            <Productdetail data={data} />
+            <Productdetail data={data} token={token} />
         </div>
     );
 };

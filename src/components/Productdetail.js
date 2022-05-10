@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "../containers/containers.scss";
 
-const Productdetail = ({ data }) => {
+const Productdetail = ({ data, token }) => {
     const details = data.product_details;
     console.log(data);
     return (
@@ -43,15 +43,23 @@ const Productdetail = ({ data }) => {
                         <span>{data.owner.account.username}</span>
                     </div>
                 </div>
-                <Link
-                    to="/payment"
-                    state={{
-                        title: data.product_name,
-                        price: data.product_price,
-                    }}
-                >
-                    <button className="btn-offer-pay">Acheter</button>
-                </Link>
+                {token ? (
+                    <Link
+                        to="/payment"
+                        state={{
+                            title: data.product_name,
+                            price: data.product_price,
+                        }}
+                    >
+                        <button className="btn-offer-pay">Acheter</button>
+                    </Link>
+                ) : (
+                    <Link to="/login">
+                        <button className="btn-login-before">
+                            Connectez-vous avant d'acheter
+                        </button>
+                    </Link>
+                )}
             </div>
         </div>
     );
